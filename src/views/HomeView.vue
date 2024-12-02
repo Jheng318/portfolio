@@ -1,5 +1,6 @@
 <template>
   <div>
-    <h1>Hellow</h1>
+    <h1>Hello</h1>
+    <p>hello world</p>
   </div>
 </template>
