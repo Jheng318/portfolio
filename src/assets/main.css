@@ -1,1 +1,10 @@
 @import url(css_reset.css);
+#hero-img,
+#html-icon {
+  width: 50vw;
+  height: 50vh;
+}
+
+body {
+  background-color: white;
+}
