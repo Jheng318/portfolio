@@ -11,7 +11,7 @@
       }
 
       .cls-3 {
-        fill: url(#linear-gradient);
+        fill: #fcf7ff;
       }
 
       .cls-4 {

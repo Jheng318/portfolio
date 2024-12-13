@@ -1,10 +1,149 @@
 @import url(css_reset.css);
-#hero-img,
-#html-icon {
-  width: 50vw;
-  height: 50vh;
+
+:root {
+  --font-s: 16px;
+  --font-m: 18px;
+  --font-l: 20px;
+  --background-color: #fcf7ff;
+  --medium-color: #a4969b;
+  --main-color: #655560;
+}
+html {
+  /* font-size: var(--font-l); */
+  font-size: clamp(1rem, 0.939rem + 0.259vw, 1.25rem);
+  font-family: "Roboto";
 }
 
 body {
-  background-color: white;
+  background-color: var(--background-color);
+}
+main {
+  min-height: 80vh;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+#logo {
+  width: clamp(3.438rem, 2.133rem + 5.566vw, 8.813rem);
+  height: auto;
+  padding-left: 2em;
+  align-content: center;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: var(--main-color);
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 100px;
+}
+nav ul li a {
+  color: var(--background-color);
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  max-width: 500px;
+}
+#hamburger,
+.hamburgerIcon {
+  display: none;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  margin: 3rem 0;
+}
+#hero-img {
+  width: 50vw;
+  max-width: 652px;
+  height: auto;
+  background: transparent;
+}
+.heroText {
+  margin-inline: 1rem;
+}
+.heroText p {
+  padding: 1rem 0;
+}
+.heroText button {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(#a4969b 0%, #655560 100%);
+  color: var(--background-color);
+}
+span {
+  color: var(--medium-color);
+}
+footer {
+  background-color: var(--main-color);
+  width: 100vw;
+}
+@media screen and (max-width: 768px) {
+  /* html {
+    font-size: var(--font-m);
+  } */
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    min-width: 350px;
+    /* width: 70vw; */
+  }
+  .hamburgerIcon {
+    display: none;
+  }
+  /* #logo {
+    width: 20vw;
+  } */
+}
+@media screen and (max-width: 480px) {
+  /* html {
+    font-size: var(--font-s);
+  } */
+  header {
+    min-height: 50px;
+    padding-left: none;
+  }
+  nav {
+    display: none;
+  }
+  #hamburger:checked ~ nav {
+    display: block;
+  }
+  .hamburgerIcon {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hamburgerIcon {
+    color: var(--background-color);
+    font-size: 2rem;
+    padding-right: 2rem;
+  }
+  /* #logo {
+    width: 25vw;
+    max-width: 140px;
+    height: auto;
+  } */
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .heroText p {
+    padding: 1rem;
+  }
 }
