@@ -8,6 +8,10 @@
   --medium-color: #a4969b;
   --main-color: #655560;
 }
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+}
 html {
   /* font-size: var(--font-l); */
   font-size: clamp(1rem, 0.939rem + 0.259vw, 1.25rem);
@@ -16,6 +20,11 @@ html {
 
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
+  max-width: 100%;
+}
+section {
+  min-height: 500px;
 }
 main {
   min-height: 80vh;
@@ -25,6 +34,9 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
+}
+button:hover {
+  cursor: pointer;
 }
 #logo {
   width: clamp(3.438rem, 2.133rem + 5.566vw, 8.813rem);

@@ -7,8 +7,19 @@
         Full-Stack Developer based in Singapore <br />
         interested in new Web Technologies
       </p>
-      <button>Resume</button>
+      <button @click="download">Resume</button>
     </div>
   </section>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const download = () => {
+  // replace the url with the link of the github pages link
+  const url: string = "http://localhost:5173/files/resume.pdf";
+  const link = document.createElement("a") as HTMLAnchorElement;
+  link.href = url;
+  link.download = "Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+</script>
