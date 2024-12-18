@@ -1,11 +1,9 @@
 <template>
-  <Header />
-
-  <h1>Error View</h1>
-  <Footer />
+  <layout>
+    <h1>Error View</h1>
+  </layout>
 </template>
 
 <script setup lang="ts">
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+import layout from "@/shared/layout.vue";
 </script>

@@ -4,6 +4,7 @@
     <style>
       .cls-1 {
         font-size: 85px;
+        opacity: 0;
       }
 
       .cls-2 {
@@ -16,6 +17,7 @@
 
       .cls-4 {
         font-size: 87.19px;
+        opacity: 0;
       }
     </style>
     <linearGradient id="linear-gradient" x1="-5.83" y1="96.41" x2="137.42" y2="13.71" gradientUnits="userSpaceOnUse">
