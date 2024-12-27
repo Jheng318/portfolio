@@ -1,7 +1,7 @@
 <template>
   <section id="about">
     <h2 class="about-heading">About Me</h2>
-    <p class="about-para">
+    <p class="about-para-div">
       My name is Jia Hong and I am a Web Developer based in Singapore. I am
       passionate about Full-Stack Development and I design websites with
       minimalistic layout and interactions. I recently graduated from Nanyang
