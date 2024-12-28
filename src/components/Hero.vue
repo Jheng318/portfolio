@@ -14,7 +14,7 @@
 <script setup lang="ts">
 const download = () => {
   // replace the url with the link of the github pages link
-  const url: string = "http://localhost:5173/files/resume.pdf";
+  const url: string = "https://jheng318.github.io/portfolio-vue/resume.pdf";
   const link = document.createElement("a") as HTMLAnchorElement;
   link.href = url;
   link.download = "Resume.pdf";
