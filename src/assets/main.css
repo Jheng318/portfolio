@@ -276,6 +276,52 @@ span {
   width: 10%;
   min-width: 42px;
 }
+#contact {
+  margin: 5rem 0;
+  position: relative;
+}
+#contact form h3 {
+  color: var(--background-color);
+}
+#contact form {
+  background-color: var(--main-color);
+  border-radius: 2rem;
+  width: 60vw;
+  margin: 2rem auto;
+  padding: 2rem 5rem;
+}
+.contactInput {
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 1.5rem;
+  width: 100%;
+  background-color: var(--background-color);
+  margin: 1rem 0;
+}
+.contactInput::placeholder {
+  color: var(--main-color);
+  text-align: left;
+}
+.contactInput {
+  outline: 1px solid var(--medium-color);
+}
+#contactMessage {
+  max-height: 140px;
+  min-height: 100px;
+  resize: none;
+  margin-bottom: 2rem;
+}
+.contactSubmit {
+  border: none;
+  color: var(--main-color);
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 0.25rem 1rem;
+}
+.disabled {
+  background-color: #cccccc;
+  color: #666666;
+}
 footer {
   background-color: var(--main-color);
   width: 100vw;
@@ -327,6 +373,9 @@ footer {
   }
   .projIcons {
     max-width: 5%;
+  }
+  #contact form {
+    width: 70vw;
   }
 }
 
@@ -401,5 +450,12 @@ footer {
   .projIcons {
     max-width: 30px;
     min-width: unset;
+  }
+  #contact form input,
+  #contact form textarea {
+    padding: 0.3rem 1rem;
+  }
+  #contact form {
+    width: 80vw;
   }
 }
