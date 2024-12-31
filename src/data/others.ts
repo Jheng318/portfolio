@@ -2,23 +2,23 @@ import type { skillType } from "@/types/skillsTypes";
 const others: skillType[] = [
   {
     name: "Flutter & Dart",
-    img: "./src/assets/flutter-original.svg",
+    img: new URL("@/assets/flutter-original.svg", import.meta.url).href,
   },
   {
     name: "Python",
-    img: "./src/assets/python-original.svg",
+    img: new URL("@/assets/python-original.svg", import.meta.url).href,
   },
   {
     name: "Selenium (Java)",
-    img: "./src/assets/selenium-original.svg",
+    img: new URL("@/assets/selenium-original.svg", import.meta.url).href,
   },
   {
     name: "UiPath (RPA)",
-    img: "./src/assets/uipath-3.svg",
+    img: new URL("@/assets/uipath-3.svg", import.meta.url).href,
   },
   {
     name: "Adobe Xd",
-    img: "./src/assets/xd-original.svg",
+    img: new URL("@/assets/xd-original.svg", import.meta.url).href,
   },
 ];
 

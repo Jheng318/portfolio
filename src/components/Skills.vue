@@ -31,7 +31,7 @@
   </section>
 </template>
 <script setup lang="ts">
-import others from "@/data/others";
-import frontEndSkills from "@/data/front-end";
-import backEndSkills from "@/data/back-end";
+import others from "../data/others";
+import frontEndSkills from "../data/front-end";
+import backEndSkills from "../data/back-end";
 </script>

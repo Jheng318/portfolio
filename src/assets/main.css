@@ -333,8 +333,22 @@ textarea {
   color: var(--main-color);
 }
 footer {
-  background-color: var(--main-color);
   width: 100vw;
+  text-align: center;
+  color: var(--main-color);
+}
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+footer .footerLinks a img {
+  width: 5vw;
+  height: auto;
+  margin: 0 1rem;
+}
+footer .footerText {
+  padding-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
   /* html {
@@ -386,6 +400,9 @@ footer {
   }
   #contact form {
     width: 70vw;
+  }
+  footer .footerLinks a img {
+    width: 8vw;
   }
 }
 
@@ -467,5 +484,8 @@ footer {
   }
   #contact form {
     width: 80vw;
+  }
+  footer .footerLinks a img {
+    width: 10vw;
   }
 }

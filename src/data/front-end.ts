@@ -1,24 +1,26 @@
 import type { skillType } from "@/types/skillsTypes";
+
 const frontEndSkills: skillType[] = [
   {
     name: "Html",
-    img: "./src/assets/html5-plain.svg",
+    img: new URL("@/assets/html5-plain.svg", import.meta.url).href,
   },
   {
     name: "CSS",
-    img: "./src/assets/css3-original.svg",
+    img: new URL("@/assets/css3-original.svg", import.meta.url).href,
   },
   {
     name: "Javascript",
-    img: "./src/assets/javascript-original.svg",
+    img: new URL("@/assets/javascript-original.svg", import.meta.url).href,
   },
   {
     name: "jQuery",
-    img: "./src/assets/jquery-original.svg",
+    img: new URL("@/assets/jquery-original.svg", import.meta.url).href,
   },
   {
     name: "Vue.js",
-    img: "./src/assets/vuejs-original.svg",
+    img: new URL("@/assets/vuejs-original.svg", import.meta.url).href,
   },
 ];
+
 export default frontEndSkills;
