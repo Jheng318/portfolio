@@ -1,9 +1,11 @@
 <template>
   <header>
-    <RouterLink to="/">
-      <img src="../assets/logo-new_logo.svg" id="logo" />
-    </RouterLink>
-    <label for="hamburger" class="hamburgerIcon">&#9776;</label>
+    <div class="headerDiv">
+      <RouterLink to="/">
+        <img src="../assets/logo-new_logo.svg" id="logo" />
+      </RouterLink>
+      <label for="hamburger" class="hamburgerIcon"> &#9776; </label>
+    </div>
     <input type="checkbox" id="hamburger" />
     <nav>
       <ul>
