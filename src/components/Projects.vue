@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="projItem2 projItem">
-        <img src="/portfolio.png" alt="portfolio website" class="projImg" />
+        <img src="/hotel-website.png" alt="Hotel Website" class="projImg" />
         <div class="projItemText">
           <h4>Hotel Website</h4>
           <p>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="projItem3 projItem">
-        <img src="/portfolio.png" alt="portfolio website" class="projImg" />
+        <img src="/snake-game.png" alt="snake game" class="projImg" />
         <div class="projItemText">
           <h4>Snake Game</h4>
           <p>
